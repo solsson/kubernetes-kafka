@@ -1,9 +1,9 @@
 
-FROM openjdk:8u102-jre
+FROM openjdk:8u151-jre
 
-ENV kafka_version=0.10.1.1
-ENV scala_version=2.11.8
-ENV kafka_bin_version=2.11-$kafka_version
+ENV kafka_version=1.0.0
+ENV scala_version=2.12.4
+ENV kafka_bin_version=2.12-$kafka_version
 
 RUN curl -SLs "http://www.scala-lang.org/files/archive/scala-$scala_version.deb" -o scala.deb \
 	&& dpkg -i scala.deb \
